@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Detailer | Estética Automotriz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#0055ff',
+                            dark: '#0a0f1c',
+                            cyan: '#00d2ff'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        display: ['Montserrat', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        h1, h2, h3, .font-display {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        .text-glow {
+            text-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
+        }
+
+        .bg-pattern {
+            background-image: radial-gradient(rgba(0, 85, 255, 0.15) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-slate-200 antialiased bg-pattern min-h-screen flex flex-col">
+
+    <!-- Navbar -->
+    <nav class="bg-brand-blue bg-opacity-95 backdrop-blur-sm fixed w-full z-50 top-0 border-b border-blue-400/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer">
+                    <!-- Logo simulado JD -->
+                    <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-brand-blue font-display font-black text-2xl italic">
+                        JD
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-display font-bold text-xl text-white tracking-wider">JOÃO DETAILER</span>
+                        <span class="text-xs text-blue-200 tracking-[0.2em]">ESTÉTICA AUTOMOTIVA</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#inicio" class="hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Inicio</a>
+                        <a href="#combo" class="hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Combo Completo</a>
+                        <a href="#contacto" class="bg-green-500 hover:bg-green-600 text-white px-5 py-2.5 rounded-full text-sm font-bold flex items-center gap-2 transition-all transform hover:scale-105 shadow-lg shadow-green-500/30">
+                            <i class="fab fa-whatsapp text-lg"></i> Agendar Cita
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="flex-grow pt-24 pb-12 flex items-center" id="inicio">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+                
+                <!-- Text Content -->
+                <div class="w-full lg:w-1/2 space-y-8 text-center lg:text-left z-10 pt-10 lg:pt-0">
+                    <div class="inline-block px-4 py-1.5 rounded-full glass-card text-brand-cyan text-sm font-semibold tracking-wide mb-2 uppercase">
+                        Promoción Exclusiva
+                    </div>
+                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-tight font-display">
+                        COMBO <br>
+                        <span class="text-brand-cyan text-glow">COMPLETO</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-slate-400 max-w-xl mx-auto lg:mx-0">
+                        Déjalo como nuevo con nuestro servicio estrella de estética automotriz. Atención al detalle y productos de primera calidad para que tu vehículo brille.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                        <a href="https://wa.me/5567999271252?text=Hola,%20me%20gustaría%20agendar%20un%20Combo%20Completo" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-3 transition-all transform hover:scale-105 shadow-xl shadow-green-500/20">
+                            <i class="fab fa-whatsapp text-2xl"></i>
+                            Agendar por WhatsApp
+                        </a>
+                        <a href="#combo" class="glass-card hover:bg-white/10 text-white px-8 py-4 rounded-full font-bold text-lg flex items-center justify-center transition-all">
+                            Ver Detalles
+                        </a>
+                    </div>
+                    
+                    <div class="flex items-center justify-center lg:justify-start gap-4 pt-6 text-slate-300 font-medium text-lg">
+                        <i class="fas fa-phone-alt text-brand-cyan"></i>
+                        <span>67 99927-1252</span>
+                    </div>
+                </div>
+
+                <!-- Image / Flyer Representation -->
+                <div class="w-full lg:w-1/2 relative flex justify-center lg:justify-end mt-10 lg:mt-0" id="combo">
+                    <!-- Efecto de resplandor de fondo -->
+                    <div class="absolute inset-0 bg-brand-cyan/20 blur-[100px] rounded-full"></div>
+                    
+                    <!-- Contenedor de la Imagen/Flyer -->
+                    <div class="relative w-full max-w-md group">
+                        <!-- Imagen proporcionada por el usuario -->
+                        <img src="prueado1.png" alt="Flyer Combo Completo João Detailer" class="w-full h-auto rounded-2xl shadow-2xl relative z-10 border border-slate-700/50 transform transition-transform duration-500 group-hover:scale-[1.02]">
+                        
+                        <!-- Overlay Informativo estilo Glass (Aparece en hover en pantallas grandes, o siempre debajo en móviles si no hubiera flyer, pero como tenemos el flyer lo mantenemos decorativo o como respaldo) -->
+                        <div class="absolute -bottom-6 -right-6 glass-card p-6 rounded-2xl z-20 hidden md:block animate-bounce" style="animation-duration: 3s;">
+                            <div class="flex items-center gap-3">
+                                <div class="bg-green-500 p-3 rounded-full text-white">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div>
+                                    <p class="text-white font-bold text-sm uppercase">Mejor Precio</p>
+                                    <p class="text-brand-cyan font-bold text-lg">Garantizado</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Services Details Section -->
+    <section class="py-20 relative z-10 border-t border-slate-800 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-display font-bold text-white mb-4">¿Qué incluye el <span class="text-brand-cyan">Combo Completo</span>?</h2>
+                <p class="text-slate-400 max-w-2xl mx-auto text-lg">Todo lo que tu carro necesita para lucir impecable por dentro y por fuera.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service 1 -->
+                <div class="glass-card p-6 rounded-2xl hover:bg-white/5 transition-colors border border-slate-700/50">
+                    <div class="w-12 h-12 bg-brand-blue/20 text-brand-cyan rounded-xl flex items-center justify-center text-2xl mb-4">
+                        <i class="fas fa-car-wash"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Lavagem Completa</h3>
+                    <p class="text-slate-400">Lavado exterior detallado utilizando shampoo automotriz de alta calidad para proteger la pintura de tu vehículo.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-card p-6 rounded-2xl hover:bg-white/5 transition-colors border border-slate-700/50">
+                    <div class="w-12 h-12 bg-brand-blue/20 text-brand-cyan rounded-xl flex items-center justify-center text-2xl mb-4">
+                        <i class="fas fa-fan"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Aspiração Interna</h3>
+                    <p class="text-slate-400">Aspirado profundo de alfombras, asientos y baúl para eliminar polvo, tierra y cualquier tipo de suciedad.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-card p-6 rounded-2xl hover:bg-white/5 transition-colors border border-slate-700/50">
+                    <div class="w-12 h-12 bg-brand-blue/20 text-brand-cyan rounded-xl flex items-center justify-center text-2xl mb-4">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Limpeza de Painel</h3>
+                    <p class="text-slate-400">Limpieza y acondicionamiento del tablero y partes plásticas para restaurar el color y proteger contra los rayos UV.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-card p-6 rounded-2xl hover:bg-white/5 transition-colors border border-slate-700/50 lg:col-start-2">
+                    <div class="w-12 h-12 bg-brand-blue/20 text-brand-cyan rounded-xl flex items-center justify-center text-2xl mb-4">
+                        <i class="fas fa-circle-notch"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Pretinho nos Pneus</h3>
+                    <p class="text-slate-400">Aplicación de abrillantador especial para llantas (pretinho) que deja un aspecto negro, brillante y duradero.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-card p-6 rounded-2xl hover:bg-white/5 transition-colors border border-slate-700/50">
+                    <div class="w-12 h-12 bg-brand-blue/20 text-brand-cyan rounded-xl flex items-center justify-center text-2xl mb-4">
+                        <i class="fas fa-spray-can"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Cheirinho</h3>
+                    <p class="text-slate-400">Aromatización del habitáculo con fragancias exclusivas para que tu carro huela como recién salido de agencia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-blue py-10 mt-auto border-t border-blue-500" id="contacto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+            <div>
+                <div class="flex items-center gap-2 justify-center md:justify-start mb-2 text-white">
+                    <span class="font-display font-black text-2xl italic">JD</span>
+                    <span class="font-display font-bold text-xl tracking-wider">JOÃO DETAILER</span>
+                </div>
+                <p class="text-blue-200 text-sm">Especialistas en Estética Automotriz.</p>
+            </div>
+            
+            <div class="flex gap-4">
+                <a href="https://wa.me/5567999271252" target="_blank" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-green-500 transition-colors">
+                    <i class="fab fa-whatsapp text-xl"></i>
+                </a>
+                <a href="#" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-brand-cyan transition-colors">
+                    <i class="fab fa-instagram text-xl"></i>
+                </a>
+                <a href="#" class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center text-white hover:bg-brand-blue transition-colors">
+                    <i class="fab fa-facebook-f text-xl"></i>
+                </a>
+            </div>
+            
+            <div class="text-blue-200 text-sm">
+                <p><i class="fas fa-phone-alt mr-2"></i> (67) 99927-1252</p>
+                <p class="mt-1">&copy; 2026 João Detailer. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
